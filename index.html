@@ -16,6 +16,7 @@
   <div class="color blue" id="blue"></div>
 </div>
 <script>
+$(document).ready(function(){
 $("#green").click(function(){     // declaration de l'id "green" ,evenemt click.
   $("#texte").css("color","green"); // on change la couleur du txt
 })
@@ -24,6 +25,11 @@ $("#red").click(function(){   // decl de l'id red
 })
 $("#blue").click(function(){    // decl de l'id blue
   $("#texte").css("color","blue");  // change la couleur du txt
+});
+})
+/* pour le faire en une fction
+$("color").click(function(){
+ $('#texte').css('color', $(this).attr('id'));  
 });
 </script>
 </body>
